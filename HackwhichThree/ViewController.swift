@@ -13,8 +13,8 @@ class ViewController: UIViewController {
     
     var firstString = "The background color will turn to blue"
     var secondString = "The background color will turn to green"
-    var thirdString = "The background color will turn to orange"
-    var fourthString = "The background color will turn to yellow"
+    var thirdString = 8
+    var fourthString = 24
     
     @IBOutlet weak var redLabel: UILabel!
     @IBOutlet weak var blueLabel: UILabel!
@@ -42,10 +42,11 @@ class ViewController: UIViewController {
     //Problem Set 2
     @IBAction func changeMagicButtonPressed(_ sender: Any)
     {
-        if thirdString + fourthString == "The background color will turn to orange"
+        if thirdString < fourthString
         {
             self.view.backgroundColor = UIColor.green
             self.greenLabel.text = "green"
+            print("I completed both problem sets")
         }
     
     }
